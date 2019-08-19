@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>生日快乐！！</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .bg{
+            background-image: url('./images/index-bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-top: 1.1rem;
+            text-align: center;
+            margin-top: 1rem;
+            padding-bottom: 1.2rem;
+        }
+        .inp{
+            width: 1.3rem;
+            outline: 0;
+            border: 2px solid pink;
+            border-radius: 10px;
+            text-indent: 0.1rem;
+            text-align: center;
+            margin-top: 0.2rem;
+        }
+        .btn{
+            outline: 0;
+            border: 0;
+            background-color: pink;
+            color: blueviolet;
+            padding: 0 0.1rem;
+            border-radius: 10rem;
+            margin-top: 0.1rem;
+        }
+        p{
+            margin-top: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <p>今天是哪个小蠢货的生日呢？</p>
+        <input class="inp" type="text" placeholder="游戏ID"><br>
+        <button class="btn" onclick="click1()">确定</button>
+    </div>
+    <script src="./js/mobile.js"></script>
+    <script>
+        let inp = document.querySelector('.inp')
+        function click1() {
+           if(inp.value == '阿孟'){
+               alert('耶(＾－＾)V 答对了！！')
+               window.location = "./dg.html"
+           } else{
+            alert('连自己的ID都记不住 笨(～￣(OO)￣)ブ')
+           }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>生日快乐！！</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <style>
+        @keyframes name {}
+
+        body {
+            background-color: #ee9ca7;
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+
+        p {
+            color: #a88679;
+            text-align: center;
+        }
+
+        .dh {
+            /* transition: fadeInDown ; */
+            /* transform: fadeInDown ; */
+            animation: fadeInDown 1s 5s forwards;
+            opacity: 0;
+        }
+
+        .joker {
+            animation: jackInTheBox 1s 8s forwards;
+            opacity: 0;
+        }
+
+        .dg {
+            font-size: 0.2rem;
+            opacity: 0;
+            animation: fadeIn 1s 10s forwards;
+        }
+
+        span {
+            color: red;
+        }
+        .btn{
+            width: 60%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            outline: 0;
+            background-color: #ee9ca7;
+            border: 2px solid #a88679;
+            border-radius: 10rem;
+            padding: 0 0.1rem;
+            color: gray;
+            margin-top: 0.2rem;
+            opacity: 0;
+            animation: fadeIn 1s 10s forwards;
+        }
+        .no{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./images/srkl.gif" alt="">
+    <p>喏 给你的蛋糕 13岁生日快乐!!</p>
+    <p class="dh">对着手机话筒可以吹灭蜡烛哦</p>
+    <p class="joker">骗你的 哈哈哈 你不会真吹了吧？</p>
+    <p class="dg">
+        怎么样 这个蛋糕你喜欢么？<span>(谨慎选择)</span>
+    </p>
+    <div class="btn">
+        <button onclick="xq('y')">喜欢</button>
+        <button class="no" onclick="xq('n')">不喜欢</button>
+    </div>
+    <script src="./js/mobile.js"></script>
+    <script>
+        function xq (e){
+            if(e == 'y'){
+                alert('太棒了 嘻嘻')
+                window.location = "./last.html"
+            }else{
+                alert('？？给我重选 生气')
+            }
+        }
+    </script>
+</body>
+
+</html>
